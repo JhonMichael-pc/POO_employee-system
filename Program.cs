@@ -108,7 +108,7 @@ class Program
 
                                 while (name == "")
                                 {
-                                    Console.WriteLine("ERROR: Please enter a name:");
+                                    Console.WriteLine("ERROR: Empty fields are not allowed. Please enter a name:");
                                     name = (Console.ReadLine() ?? "").Trim();
                                 }
 
@@ -119,7 +119,7 @@ class Program
 
                                 while (lastname == "")
                                 {
-                                    Console.WriteLine("ERROR: Please enter the last name:");
+                                    Console.WriteLine("ERROR: Empty fields are not allowed. Please enter the last name:");
                                     lastname = (Console.ReadLine() ?? "").Trim();
                                 }
 
@@ -132,7 +132,7 @@ class Program
 
                                     if (idcard.Length != 11 || !idcard.All(char.IsDigit))
                                     {
-                                        Console.WriteLine("ERROR: The ID card must have exactly 11 digits.");
+                                        Console.WriteLine("ERROR: Empty fields are not allowed. The ID card must have exactly 11 digits.");
                                         continue;
                                     }
 
